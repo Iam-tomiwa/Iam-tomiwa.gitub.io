@@ -148,7 +148,7 @@ header h5{
 		grid-template-areas: 
 			'main aside';
 		grid-gap: 40px;
-		padding: 0 2rem;
+		padding: 0 1rem;
 	}
 	aside{
 		grid-area: aside;

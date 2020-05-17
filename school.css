@@ -1,0 +1,420 @@
+/*css variables*/
+:root {
+	--primary: #34344a;
+	--sec: #545353;
+	--light: ;
+}
+html{
+	padding: 0;
+	margin: 0;
+	background: #5453531f;
+}
+body{
+	background: #fff;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+#h2 {
+	color: #312eef;
+}
+.img{
+	padding: 30px 0 30px 10vw;
+	display: inline-block;
+	width: 40vw;
+
+}
+/*nav*/
+.nav-body{
+	display: grid;
+}
+#nav{
+	display: inline;
+}
+#nav>img{
+	float: left;
+	padding-left: 4vw;
+	width: 10vw; 
+	height: 60px;
+}
+#nav>.text>h3, p{
+	margin: 0;
+	
+}
+#nav>.text>h3{
+	padding-top: 10px;
+}
+#nav>.text{ 
+	width: 30%;
+	display: inline-block;
+	color: var(--primary);
+}
+.search{
+	float: right;
+	margin: 20px 20px 0 0;
+	
+}
+.search>#input{
+	border: 0.5px solid #34344a;
+	border-radius: 4px;
+	height: 30px;
+}	
+button{
+	background: var(--primary);
+	height: 30px;
+	color: #fff;
+	border: 0.5px solid var(--primary);
+	width: 70px;
+	border-radius: 4px;
+}
+.button, .fa-search {
+	display: none;
+}
+nav{
+	color: #211677;
+	width: 100vw;
+	background: #34344a;
+	height: 40px;
+}
+.nav{
+	padding: 3px 10px;
+	margin: 10px 0 0 30px;
+	display: flex;
+	list-style-type: none;
+}
+.nav>li>a{
+	text-decoration: none;	
+	color: #fff;
+}
+.navlink>a:hover{
+	color: #000;
+	align-items: center;
+}
+.navlink{
+	padding-left: 20px;
+	padding-right: 20px;
+	/*display: inline;*/
+	border-right: 1px solid #fff;	
+}
+.social{
+	margin-left: 60px;
+	font-size: 1.2em;
+}
+.social>a{
+	color: #b1afc3;
+	padding-right: 10px;
+}
+.social>a:hover{
+	color: #fff;
+}
+
+/*header*/
+
+header{
+	background: url(sch1.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 350px;
+	padding: 15% 7rem 0 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: left;
+	color: #fff;
+}
+.header{
+	background: #545353;
+	border-left: 4px solid #4141ab;
+	padding: 2rem 1rem 2rem 2rem;
+}
+header h3{
+	font-size: 2rem;
+	margin: 0;
+	padding-bottom: 0.7rem;
+}
+header h5{
+	font-size: 1rem;
+	padding-bottom: 0.7rem;
+	margin: 0;
+}
+
+/*section*/
+	.main{
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-template-areas: 
+			'main aside';
+		grid-gap: 40px;
+		padding: 0 2rem;
+	}
+	aside{
+		grid-area: aside;
+	}
+	main{
+	grid-area: main;
+	}
+}
+
+main>p{
+	font-size: 15px;
+	color: #5a5959;
+}
+aside>h5{
+	background: #5453534f;
+	padding: 2px;
+	border-top: 1px solid #54535399;
+	border-bottom: 1px solid #54535399;
+}
+aside>ul>li{
+	list-style-type: none;
+	margin-left: 12px;
+	padding: 3px 0;
+}
+
+aside>ul>li>a{
+	color: #545353;
+	text-decoration: none;	
+	margin-bottom: 30px;
+}
+aside>p{
+	line-height: 20px;
+	margin-top: 20px;
+}
+footer{
+	display: grid;
+	grid-template-columns: 25vw 30vw 45vw;
+	grid-gap: 20px;
+	color: #fff;
+	padding: 2rem 0rem 1rem 2rem;
+	background: #34344a;
+	width: 98vw;
+	margin-top: 7vh;
+}
+#copy{
+	display: inline-block;
+	width: 98vw;
+	border-top: 1px solid #fff;
+	background: #34344a;
+	color: #fff;
+	font-size: 1.3vw;
+	padding: 0.7rem 1rem;
+}
+.foot>ul{
+	padding: 0;
+}
+.foot>ul>li{
+	list-style-type: none;
+	margin: 3vw 0;
+	border-bottom: 1px solid #fff;
+}
+.fa-arrow-right{
+	font-size: 3vh;
+}
+.foot>ul>li>a{
+	font-size: 2.5vh;
+	text-decoration: none;	
+	margin-bottom: 30px;
+	color: #fff;
+}
+.foot>h4{
+	margin-top: 50px;
+}
+.footer>p{
+	line-height: 20px;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.main{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-areas: 
+			'main main'
+			'aside aside';
+		grid-gap: 0;
+	}
+	main{
+		grid-area: main;
+		padding: 0 0.2vw;
+	}
+	aside{
+		padding: 0 1rem;
+		grid-area: aside;
+		width: 50vw;
+	}
+	.img{
+		min-width: 70vw;
+		padding-left: 7vw;
+	}
+	body>header{
+		padding: 19rem 0.5rem 0 0.5rem;
+	}
+	.header>h5{
+		font-size: 0.7rem;
+	}
+	.header>h3{
+		font-size: 1rem;
+	}
+	#h2{
+		font-size: 1.2rem;
+		margin: 1rem 0;
+	}
+	.nav{
+		flex-direction: column;
+		background: #34344a; 
+	}
+	.nav>li>a{
+		display: block;
+		width: 94vw;
+		padding: 0.5vh 0;
+		font-size: 2.5vw;
+	}
+	.navlink>a:hover{
+	color: #34344a;
+	background: #fff;
+	}
+	.nav>li{
+		margin: 0;
+		align-self: flex-end;
+	}
+	.button{
+		padding: 0;
+		margin: 0 3vw 0 0;
+		display: block;
+		font-size: 3vh;
+		/*background: #fff;*/
+		border: none;
+		outline: none;
+		cursor: pointer;
+		color: #fff;
+		align-self: flex-end;
+		font-weight: bolder;
+		height: 7vh;
+	}
+	#nav>.text{ 
+	width: 50vw;
+	}
+	.search{
+		top: 15vh;
+		right: 55vw;
+	}
+	.social{
+		font-size: 3vh;
+		margin: 3vw 0 1vw 0;
+	}
+	.social::before{
+		content: "follow us:";
+		color: #fff;
+		margin: 1vw ;
+		font-size: 3vh;
+	}
+	aside>ul{
+		padding-left: 0px;
+		font-size: 0.9rem;
+	}
+	p{
+		font-size: 0.8rem;
+	}
+	footer{
+		display: block;
+		width: 96vw;
+	}
+	#copy{
+		width: 96vw;
+	}
+	.foot>ul{
+	width: 80%;
+	}	
+}
+
+@media only screen and (max-width: 1044px) {
+	header{
+			padding: 16rem 0.5rem 0 0.5rem;
+		}
+		aside>ul{
+		padding-left: 0rem;
+		}
+		.header>h5{
+			font-size: 1.2rem;
+		}
+		.header>h3{
+			font-size: 1.5rem;
+		}
+		#h2{
+			font-size: 1.5rem;
+			margin: 1rem 0;
+		}
+		.img{
+		width: 50vw;
+		padding-left: 6vw;
+	}
+		.nav{
+		font-size: 1.2vw;
+		padding: 5px 0;
+		margin: 10px 0;
+	}
+
+}
+@media only screen and (max-width: 560px) {
+	.nav>li>a{
+		width: 90vw;
+		font-size: 2.7vw;
+		padding: 0.7vh 0;
+	}
+	aside{
+		width: 80vw;
+	}
+	body>header{
+		padding: 39vh 2vh 0 1vh;
+		max-height: 150px;
+	}
+	.header>h5{
+		font-size: 0.7rem;
+	}
+	.header>h3{
+		font-size: 1rem;
+	}
+	.social::before{
+		content: "follow us:";
+		color: #fff;
+		font-size: 2.4vh;
+	}
+	footer, #copy{
+		width: 93vw;
+	}
+	#copy, .foot>ul>li>a{
+	font-size: 2.2vh;
+	}
+	.img{
+	padding: 30px 0 30px 0px;
+	width: 80vw;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.header>h5{
+		font-size: 0.6rem;
+	}
+	.header>h3{
+		font-size: 0.7rem;
+	}	
+	body>header{
+		padding: 30vh 2vh 0 1vh;
+		max-height: 150px;
+	}
+	#h2{
+		font-size: 1rem;
+	}
+	h3{
+		font-size: 0.9rem;
+	}
+	.nav>li>a{
+		width: 89vw;
+		font-size: 2.6vw;
+	}
+	footer, #copy{
+		width: 92vw;
+	}
+}

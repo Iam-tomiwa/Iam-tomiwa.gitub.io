@@ -68,6 +68,7 @@ button{
 	border: 0.5px solid var(--primary);
 	width: 70px;
 	border-radius: 4px;
+	margin-left: 2px;
 }
 .button, .fa-search {
 	display: none;
@@ -298,8 +299,9 @@ footer{
 	width: 50vw;
 	}
 	.search{
-		top: 15vh;
-		right: 55vw;
+		float : none;
+		width : 300px;
+		margin : 5px auto;
 	}
 	.social{
 		font-size: 3vh;
